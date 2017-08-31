@@ -187,6 +187,18 @@
 <smd name="A" x="-1.27" y="0" dx="1.27" dy="0.635" layer="1"/>
 <smd name="B" x="1.27" y="0" dx="1.27" dy="0.635" layer="1"/>
 </package>
+<package name="BAT_CELL">
+<wire x1="-69.949" y1="-33.5" x2="-69.949" y2="33.5" width="2.54" layer="21"/>
+<wire x1="69.949" y1="-33.5" x2="69.949" y2="33.5" width="2.54" layer="21"/>
+<wire x1="-70" y1="33.5" x2="69.949" y2="33.5" width="2.54" layer="21"/>
+<wire x1="69.949" y1="33.5" x2="70" y2="33.5" width="1" layer="21"/>
+<wire x1="-70" y1="-33.5" x2="69.949" y2="-33.5" width="2.54" layer="21"/>
+<wire x1="69.949" y1="-33.5" x2="70" y2="-33.5" width="1" layer="21"/>
+<pad name="+" x="-40.5" y="0" drill="0.6" diameter="10"/>
+<pad name="-" x="40.5" y="0" drill="0.6" diameter="10"/>
+<text x="-55.5498" y="13.88745" size="15" layer="21" align="bottom-center">+</text>
+<text x="54.5211" y="13.3731" size="15" layer="21" align="bottom-center">-</text>
+</package>
 </packages>
 <symbols>
 <symbol name="GND">
@@ -378,26 +390,26 @@ POT</text>
 <wire x1="-3.81" y1="-6.35" x2="-3.81" y2="6.35" width="0.1524" layer="94"/>
 </symbol>
 <symbol name="LIMIT_SWITCH">
-<circle x="-15.24" y="0" radius="0.762" width="0.1524" layer="94"/>
-<circle x="-2.54" y="0" radius="0.762" width="0.1524" layer="94"/>
-<wire x1="-14.478" y1="0" x2="-3.302" y2="-2.286" width="0.1524" layer="94"/>
-<wire x1="-6.096" y1="-1.778" x2="-6.604" y2="-3.556" width="0.1524" layer="94"/>
-<wire x1="-6.604" y1="-3.556" x2="-14.478" y2="0" width="0.1524" layer="94"/>
-<pin name="COM" x="-17.78" y="0" visible="off" length="point"/>
-<pin name="NO" x="0" y="0" visible="off" length="point"/>
-<wire x1="-17.78" y1="0" x2="-16.002" y2="0" width="0.1524" layer="94"/>
-<wire x1="0" y1="0" x2="-1.778" y2="0" width="0.1524" layer="94"/>
-<wire x1="-16.51" y1="2.032" x2="-16.51" y2="-4.318" width="0.1524" layer="94"/>
-<wire x1="-16.51" y1="-4.318" x2="-1.27" y2="-4.318" width="0.1524" layer="94"/>
-<wire x1="-1.27" y1="-4.318" x2="-1.27" y2="2.032" width="0.1524" layer="94"/>
-<wire x1="-1.27" y1="2.032" x2="-16.51" y2="2.032" width="0.1524" layer="94"/>
-<pin name="NC" x="0" y="-2.54" visible="off" length="point"/>
-<circle x="-2.54" y="-2.54" radius="0.762" width="0.1524" layer="94"/>
-<text x="-4.064" y="-2.794" size="0.762" layer="96" font="vector" align="top-center">N.C.</text>
-<text x="-4.318" y="1.27" size="0.762" layer="96" font="vector" align="top-center">N.O.</text>
-<wire x1="0" y1="-2.54" x2="-1.778" y2="-2.54" width="0.1524" layer="94"/>
-<text x="-14.478" y="-1.27" size="0.762" layer="96" font="vector" align="top-center">COM</text>
-<text x="-8.636" y="3.556" size="1.778" layer="95" font="vector" align="center">&gt;NAME</text>
+<circle x="-7.62" y="0" radius="0.762" width="0.1524" layer="94"/>
+<circle x="5.08" y="0" radius="0.762" width="0.1524" layer="94"/>
+<wire x1="-6.858" y1="0" x2="4.318" y2="-2.286" width="0.1524" layer="94"/>
+<wire x1="1.524" y1="-1.778" x2="1.016" y2="-3.556" width="0.1524" layer="94"/>
+<wire x1="1.016" y1="-3.556" x2="-6.858" y2="0" width="0.1524" layer="94"/>
+<pin name="COM" x="-10.16" y="0" visible="off" length="point"/>
+<pin name="NO" x="7.62" y="0" visible="off" length="point"/>
+<wire x1="-10.16" y1="0" x2="-8.382" y2="0" width="0.1524" layer="94"/>
+<wire x1="7.62" y1="0" x2="5.842" y2="0" width="0.1524" layer="94"/>
+<wire x1="-8.89" y1="2.032" x2="-8.89" y2="-4.318" width="0.1524" layer="94"/>
+<wire x1="-8.89" y1="-4.318" x2="6.35" y2="-4.318" width="0.1524" layer="94"/>
+<wire x1="6.35" y1="-4.318" x2="6.35" y2="2.032" width="0.1524" layer="94"/>
+<wire x1="6.35" y1="2.032" x2="-8.89" y2="2.032" width="0.1524" layer="94"/>
+<pin name="NC" x="7.62" y="-2.54" visible="off" length="point"/>
+<circle x="5.08" y="-2.54" radius="0.762" width="0.1524" layer="94"/>
+<text x="3.556" y="-2.794" size="0.762" layer="96" font="vector" align="top-center">N.C.</text>
+<text x="3.302" y="1.27" size="0.762" layer="96" font="vector" align="top-center">N.O.</text>
+<wire x1="7.62" y1="-2.54" x2="5.842" y2="-2.54" width="0.1524" layer="94"/>
+<text x="-6.858" y="-1.27" size="0.762" layer="96" font="vector" align="top-center">COM</text>
+<text x="-1.016" y="3.556" size="1.778" layer="95" font="vector" align="center">&gt;NAME</text>
 </symbol>
 <symbol name="DC_MOTOR">
 <circle x="0" y="0" radius="4.572" width="0.508" layer="94"/>
@@ -422,6 +434,7 @@ POT</text>
 <text x="3.556" y="0.762" size="1.27" layer="96" font="vector" align="center">-</text>
 <wire x1="-2.54" y1="0" x2="-1.27" y2="0" width="0.1524" layer="94"/>
 <wire x1="2.54" y1="0" x2="1.27" y2="0" width="0.1524" layer="94"/>
+<text x="0" y="4.064" size="1.778" layer="95" font="vector" align="center">&gt;NAME</text>
 </symbol>
 <symbol name="TOGGLE_SWITCH">
 <circle x="5.08" y="0" radius="0.762" width="0.1524" layer="94"/>
@@ -640,7 +653,7 @@ CONTROLLER</text>
 <text x="-5.08" y="5.08" size="1.27" layer="96" font="vector" align="center">PWR</text>
 <text x="-5.334" y="2.54" size="1.27" layer="96" font="vector" align="center">SIG</text>
 <text x="-5.08" y="0" size="1.27" layer="96" font="vector" align="center">GND</text>
-<text x="0.254" y="7.874" size="1.778" layer="96" font="vector" align="center">BATTERY LEVEL</text>
+<text x="1.016" y="7.874" size="1.778" layer="96" font="vector" align="center">BATTERY LEVEL</text>
 </symbol>
 <symbol name="BATTERY_MONITOR">
 <pin name="BAT" x="-12.7" y="0" visible="off" length="short"/>
@@ -956,6 +969,43 @@ REGULATOR</text>
 <wire x1="-2.54" y1="6.096" x2="2.54" y2="6.096" width="0.1524" layer="94"/>
 <wire x1="2.54" y1="6.096" x2="2.54" y2="-6.096" width="0.1524" layer="94"/>
 </symbol>
+<symbol name="BAT_CELL">
+<pin name="+" x="-2.54" y="0" visible="off" length="point"/>
+<pin name="-" x="2.54" y="0" visible="off" length="point"/>
+<wire x1="-5.08" y1="2.54" x2="5.08" y2="2.54" width="0.254" layer="94"/>
+<wire x1="5.08" y1="2.54" x2="5.08" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-2.54" x2="-5.08" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-2.54" x2="-5.08" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-3.81" y1="-1.143" x2="-3.81" y2="-2.159" width="0.1524" layer="96"/>
+<wire x1="-4.445" y1="-1.651" x2="-3.175" y2="-1.651" width="0.1524" layer="96"/>
+<wire x1="4.191" y1="-2.159" x2="4.191" y2="-1.143" width="0.1524" layer="96"/>
+<text x="-0.127" y="0" size="1.016" layer="96" rot="R90" align="bottom-center">3.2V</text>
+<text x="1.143" y="0" size="1.016" layer="96" rot="R90" align="bottom-center">100Ah</text>
+<circle x="-2.54" y="0" radius="0.967203125" width="0.1524" layer="94"/>
+<circle x="2.54" y="0" radius="0.967203125" width="0.1524" layer="94"/>
+<circle x="-2.54" y="0" radius="0.851940625" width="0.1524" layer="94"/>
+<circle x="-2.54" y="0" radius="0.740528125" width="0.1524" layer="94"/>
+<circle x="-2.54" y="0" radius="0.635" width="0.1524" layer="94"/>
+<circle x="-2.54" y="0" radius="0.567959375" width="0.1524" layer="94"/>
+<circle x="-2.54" y="0" radius="0.457903125" width="0.1524" layer="94"/>
+<circle x="-2.54" y="0" radius="0.40160625" width="0.1524" layer="94"/>
+<circle x="-2.54" y="0" radius="0.283978125" width="0.1524" layer="94"/>
+<circle x="-2.54" y="0" radius="0.179603125" width="0.1524" layer="94"/>
+<circle x="2.54" y="0" radius="0.179603125" width="0.1524" layer="94"/>
+<circle x="2.54" y="0" radius="0.40160625" width="0.1524" layer="94"/>
+<circle x="2.54" y="0" radius="0.635" width="0.1524" layer="94"/>
+<circle x="2.54" y="0" radius="0.740528125" width="0.1524" layer="94"/>
+<circle x="2.54" y="0" radius="0.851940625" width="0.1524" layer="94"/>
+<circle x="2.54" y="0" radius="0.635" width="0.1524" layer="94"/>
+<circle x="2.54" y="0" radius="0.283978125" width="0.1524" layer="94"/>
+<circle x="2.54" y="0" radius="0.635" width="0.1524" layer="94"/>
+<circle x="2.54" y="0" radius="0.40160625" width="0.1524" layer="94"/>
+<circle x="2.54" y="0" radius="0.635" width="0.254" layer="94"/>
+<circle x="2.54" y="0" radius="0.567959375" width="0.1524" layer="94"/>
+<circle x="2.54" y="0" radius="0.40160625" width="0.1524" layer="94"/>
+<circle x="2.54" y="0" radius="0.40160625" width="0.254" layer="94"/>
+<circle x="2.54" y="0" radius="0.567959375" width="0.1524" layer="94"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="GND">
@@ -1069,7 +1119,7 @@ REGULATOR</text>
 </deviceset>
 <deviceset name="LIMIT_SWITCH">
 <gates>
-<gate name="G$1" symbol="LIMIT_SWITCH" x="10.16" y="0"/>
+<gate name="G$1" symbol="LIMIT_SWITCH" x="0" y="0"/>
 </gates>
 <devices>
 <device name="" package="LIMIT_SWITCH">
@@ -1340,6 +1390,22 @@ REGULATOR</text>
 <connects>
 <connect gate="G$1" pin="A" pad="A"/>
 <connect gate="G$1" pin="B" pad="B"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="BAT_CELL">
+<gates>
+<gate name="G$1" symbol="BAT_CELL" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="BAT_CELL">
+<connects>
+<connect gate="G$1" pin="+" pad="+"/>
+<connect gate="G$1" pin="-" pad="-"/>
 </connects>
 <technologies>
 <technology name=""/>
